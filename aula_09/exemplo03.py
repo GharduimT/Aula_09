@@ -9,7 +9,7 @@ def cadastra_pessoa(num):
         }
         lst_cadastro.append(pessoa)  
 
-
+#Média e Total
 def calcula_total_media():
     tot = 0
     for pessoa in lst_cadastro:
@@ -17,6 +17,18 @@ def calcula_total_media():
 
     med = tot /len(lst_cadastro)
     return tot, med
+
+def buscar_maior():
+    maior = 0
+    vendedor = ''
+
+    for v in lst_cadastro:
+        if v['Valor'] > maior: #se o queestá na chave for maior do que o que tem na variável...
+            maior = v['Valor']
+            vendedor = v['Nome']
+
+        return maior, vendedor
+
 
 #EXEMPLO 01 - CADASTRA FUNCIONARIO
 lst_cadastro = []
@@ -29,9 +41,14 @@ print(lst_cadastro)
 # -------------------------
 #exemplo 02 - TOTAL E MEDIA
 total, media = calcula_total_media()
-print(30*'=')
+print(50*'=')
 print(f'Total: {total}')
-print(f'Total: {total}')
+print(f'Total: {media}')
 
 #EXEMPLO 03 - MAIOR VALOR E VENDEDOR
 
+maior_venda, maior_vendedor = buscar_maior()
+
+print(50*'=')
+print(f'Maior Venda: {maior_venda}')
+print(f'Nome do Vendedor: {maior_vendedor}')
