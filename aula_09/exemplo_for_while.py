@@ -21,21 +21,21 @@
 
 # print(f'Os nomes foram {lst_nomes}')
 
-#contador
-lst_nomes = []
-contador = 0
-while contador < 5:
-     nome = input('informe o nome')
-    lst_nomes.append(nome)
-    contador += 1
+# #contador
+# lst_nomes = []
+# contador = 0
+# while contador < 5:
+#      nome = input('informe o nome')
+#     lst_nomes.append(nome)
+#     contador += 1
 
 
-#loopinfinito
-lst_nomes2 = []
-while True:
-    nome = input('informe o nome')
-    lst_nomes2.append(nome)
+# #loopinfinito
+# lst_nomes2 = []
+# while True:
+#     nome = input('informe o nome')
+#     lst_nomes2.append(nome)
 
-    resposta = input('Quer continuar? [s/n] ').lower()
-    if resposta == 'n':
-        break
+#     resposta = input('Quer continuar? [s/n] ').lower()
+#     if resposta == 'n':
+#         break
