@@ -27,7 +27,7 @@ def buscar_maior():
             maior = v['Valor']
             vendedor = v['Nome']
 
-        return maior, vendedor
+    return maior, vendedor
 
 
 #EXEMPLO 01 - CADASTRA FUNCIONARIO
