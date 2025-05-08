@@ -52,3 +52,7 @@ maior_venda, maior_vendedor = buscar_maior()
 print(50*'=')
 print(f'Maior Venda: {maior_venda}')
 print(f'Nome do Vendedor: {maior_vendedor}')
+
+#exemplo 04 - BUSCAR VENDEDOR
+
+vendedor = input('Inorme o nome do Vendedor')
