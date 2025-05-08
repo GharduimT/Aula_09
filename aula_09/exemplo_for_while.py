@@ -17,6 +17,6 @@ while resposta != 'n': #enquando resposta for diferente de...
     nome =input('Informe o nome: ')
     lst_nomes.append(nome) #se parasse aqui haveria repetição continuamente
     
-    resposta = input('Quer continuar? [s/n]: ')
+    resposta = input('Quer continuar? [s/n]: ') #como resposta não foi diferente de 'n' ele escreveu na tela o que guardou na lista
 
 print(f'Os nomes foram {lst_nomes}')
