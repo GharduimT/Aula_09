@@ -10,6 +10,8 @@ def cadastra_pessoa(num):
         lst_cadastro.append(pessoa)  
 
 #Média e Total
+
+
 def calcula_total_media():
     tot = 0
     for pessoa in lst_cadastro:
@@ -17,6 +19,7 @@ def calcula_total_media():
 
     med = tot /len(lst_cadastro)
     return tot, med
+
 
 def buscar_maior():
     maior = 0
@@ -29,9 +32,19 @@ def buscar_maior():
 
     return maior, vendedor
 
+
 def buscar_vendedor(nome):
     resposta = ''
     vl = 0
+
+    for cadastro in lst_cadastro:
+        if cadastro['Nome'] == nome:
+            resposta = cadastro['Nome']
+            vl = cadastro['Valor']
+
+            return resposta, vl
+    return resposta, vl #  so vai ser utilizado se não conseguir entrar no if
+
 
 #EXEMPLO 01 - CADASTRA FUNCIONARIO
 lst_cadastro = []
@@ -46,7 +59,7 @@ print(lst_cadastro)
 total, media = calcula_total_media()
 print(50*'=')
 print(f'Total: {total}')
-print(f'Total: {media}')
+print(f'Média: {media}')
 
 #EXEMPLO 03 - MAIOR VALOR E VENDEDOR
 
@@ -58,5 +71,11 @@ print(f'Nome do Vendedor: {maior_vendedor}')
 
 #exemplo 04 - BUSCAR VENDEDOR
 
-vendedor = input('Inorme o nome do Vendedor')
-buscar_vendedor = 
+vendedor = input('Informe o nome do Vendedor: ')
+nome_vendedor, valor = buscar_vendedor = (vendedor)
+
+if nome_vendedor: #  se existe algum nome de vendedor...
+    print(f'O vendedor {nome_vendedor}está presente')
+    print(f'O valor da venda é {valor}')
+else:
+    print(f'{nome_vendedor} não encontrado')
