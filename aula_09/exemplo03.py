@@ -72,7 +72,7 @@ print(f'Nome do Vendedor: {maior_vendedor}')
 #exemplo 04 - BUSCAR VENDEDOR
 
 vendedor = input('Informe o nome do Vendedor: ')
-nome_vendedor, valor = buscar_vendedor = (vendedor)
+nome_vendedor, valor = buscar_vendedor(vendedor)
 
 if nome_vendedor: #  se existe algum nome de vendedor...
     print(f'O vendedor {nome_vendedor}está presente')
