@@ -29,6 +29,9 @@ def buscar_maior():
 
     return maior, vendedor
 
+def buscar_vendedor(nome):
+    resposta = ''
+    vl = 0
 
 #EXEMPLO 01 - CADASTRA FUNCIONARIO
 lst_cadastro = []
@@ -56,3 +59,4 @@ print(f'Nome do Vendedor: {maior_vendedor}')
 #exemplo 04 - BUSCAR VENDEDOR
 
 vendedor = input('Inorme o nome do Vendedor')
+buscar_vendedor = 
